@@ -8,8 +8,7 @@ double power = .5;
 @Override
 public void runOpMode()
 {
-leftDrive = hardwareMap.get(DcMotor.class, "left_drive");
-rightDrive = hardwareMap.get(DcMotor.class, "right_drive");
+robot.init(hardwareMap);
 
 waitForStart();
 
